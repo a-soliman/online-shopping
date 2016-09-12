@@ -206,137 +206,17 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="left-sidebar">
-						<h2>Category</h2>
-						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Sportswear
-										</a>
-									</h4>
-								</div>
-								<div id="sportswear" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Nike </a></li>
-											<li><a href="#">Under Armour </a></li>
-											<li><a href="#">Adidas </a></li>
-											<li><a href="#">Puma</a></li>
-											<li><a href="#">ASICS </a></li>
-										</ul>
-									</div>
-								</div>
+						<h2>Cart</h2>
+						<div class="panel-group category-products home-cart">
+							<div class="total">
+								<p>Total Cart: $<span id="total-cart"></span></p>
 							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#mens">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Mens
-										</a>
-									</h4>
-								</div>
-								<div id="mens" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Fendi</a></li>
-											<li><a href="#">Guess</a></li>
-											<li><a href="#">Valentino</a></li>
-											<li><a href="#">Dior</a></li>
-											<li><a href="#">Versace</a></li>
-											<li><a href="#">Armani</a></li>
-											<li><a href="#">Prada</a></li>
-											<li><a href="#">Dolce and Gabbana</a></li>
-											<li><a href="#">Chanel</a></li>
-											<li><a href="#">Gucci</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#womens">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Womens
-										</a>
-									</h4>
-								</div>
-								<div id="womens" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Fendi</a></li>
-											<li><a href="#">Guess</a></li>
-											<li><a href="#">Valentino</a></li>
-											<li><a href="#">Dior</a></li>
-											<li><a href="#">Versace</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Kids</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Fashion</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Households</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Interiors</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Clothing</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Bags</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Shoes</a></h4>
-								</div>
-							</div>
-						</div><!--/category-products-->
-					
-						<div class="brands_products"><!--brands_products-->
-							<h2>Brands</h2>
-							<div class="brands-name">
-								<ul class="nav nav-pills nav-stacked">
-									<li><a href="#"> <span class="pull-right">(50)</span>Acne</a></li>
-									<li><a href="#"> <span class="pull-right">(56)</span>Grüne Erde</a></li>
-									<li><a href="#"> <span class="pull-right">(27)</span>Albiro</a></li>
-									<li><a href="#"> <span class="pull-right">(32)</span>Ronhill</a></li>
-									<li><a href="#"> <span class="pull-right">(5)</span>Oddmolly</a></li>
-									<li><a href="#"> <span class="pull-right">(9)</span>Boudestijn</a></li>
-									<li><a href="#"> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
-								</ul>
-							</div>
-						</div><!--/brands_products-->
-						
-						<div class="price-range"><!--price-range-->
-							<h2>Price Range</h2>
-							<div class="well text-center">
-								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
-								 <b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>
-							</div>
-						</div><!--/price-range-->
-						
+							<p>You have <span id="count-cart"> </span> items in your cart</p>
+							<div id="show-cart"></div>
+							<button id="clear-cart">Clear Cart</button>
+						</div>
+
+
 						<div class="shipping text-center"><!--shipping-->
 							<img src="images/home/shipping.jpg" alt="" />
 						</div><!--/shipping-->
@@ -924,5 +804,78 @@
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/shopping-cart.js"></script>
+    <script>
+    	$('.add-to-cart').click(function(event) {
+				event.preventDefault()
+				var name = $(this).attr('data-name')
+				var price = Number($(this).attr('data-price'))
+
+				shoppingCart.addItemToCart(name, price, 1)
+				displayCart()
+		})
+
+		$('#clear-cart').click(function(event) {
+			shoppingCart.clearCart()
+			displayCart()
+		})
+
+		function displayCart() {
+			var cartArray = shoppingCart.listCart()
+			var output = ''
+			for (var i in cartArray) {
+				output += '<li>'
+				+ '<h3>' + cartArray[i].name + '</h3>'
+				+ ' <input class="item-count" type="number" data-name="' 
+				+ cartArray[i].name +'" value="' 
+				+ cartArray[i].count +'">'
+				+ ' x '
+				+ cartArray[i].price
+				+ ' = '
+				+ cartArray[i].total
+				+ ' <button class="subtract-item" data-name="'
+				+ cartArray[i].name +'"> - </button>'
+				+ ' <button class="plus-item" data-name="'
+				+ cartArray[i].name +'"> + </button>'
+				+ ' <button class="delete-item" data-name="'
+				+ cartArray[i].name +'"> X </button>'
+				+ '</li>'
+				+ '<hr>'
+			}
+			$('#show-cart').html(output)
+			$('#count-cart').html(shoppingCart.countCart() )
+			$('#total-cart').html( shoppingCart.totalCart() )
+		}
+
+		$('#show-cart').on('click', '.delete-item', function(event) {
+			var name = $(this).attr('data-name')
+
+			shoppingCart.removeItemFromCartAll(name)
+			displayCart()
+		})
+
+		$('#show-cart').on('click', '.subtract-item', function(event) {
+			var name = $(this).attr('data-name')
+			shoppingCart.removeItemFromCart(name)
+			displayCart()
+		})
+		$('#show-cart').on('click', '.plus-item', function(event) {
+			var name = $(this).attr('data-name')
+			shoppingCart.addItemToCart(name, 0, 1)
+			displayCart()
+		})
+		$('#show-cart').on('change', '.item-count', function(event) {
+			var name = $(this).attr('data-name')
+			var count = Number($(this).val())
+
+			if (count === 0 || count > 0 ) {
+				shoppingCart.removeItemFromCartAll(name)
+			}
+
+			shoppingCart.setCountForItem(name,count)
+		})
+		displayCart()
+
+	</script>
 </body>
 </html>
