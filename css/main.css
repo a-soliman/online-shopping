@@ -2520,4 +2520,46 @@ h2.title {
   color: #FE980F;
 }
 
-
+.home-cart {
+    background-color: #f2f2f2;
+    text-align: center;
+    border: 1px solid orange;
+    padding: 5px;
+}
+.home-cart p {
+    color: #aaa79f;
+    padding: 5px 0;
+    border: 2px solid #fe980f;
+    background-color: #40403e;
+    font-weight: bold;
+}
+.home-cart span {
+  color: #fe980f;
+  font-weight: bold;
+}
+.home-cart input {
+  width: 20%;
+  color: #fe980f;
+  text-align: center;
+}
+.home-cart hr {
+  background: #fe980f;
+  height: 1px;
+}
+.home-cart button {
+  background-color: white; 
+  border: 1px solid #fe980f;
+  color: #fe980f;
+}
+.home-cart button:hover {
+  background-color: #fe980f;
+  color: white;
+}
+.home-cart button#clear-cart {
+  background-color: #fe980f;
+  color: white;
+}
+.home-cart button#clear-cart:hover {
+  background-color: white; 
+  color: #fe980f;
+}
