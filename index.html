@@ -696,8 +696,8 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+					<p class="pull-left">Copyright © 2015 E-SHOPPER Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by <span><a href="http://www.ahmedsoliman.net" target="_blank">A.Soliman</a></span></p>
 				</div>
 			</div>
 		</div>
@@ -776,7 +776,7 @@
 			var name = $(this).attr('data-name')
 			var count = Number($(this).val())
 
-			if (count === 0 || count > 0 ) {
+			if (count === 0 || count < 0 ) {
 				shoppingCart.removeItemFromCartAll(name)
 			}
 
